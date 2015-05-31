@@ -1,0 +1,518 @@
+
+	body, html {
+		padding: 0; 
+		margin: 0;
+		background-color: #efefef;
+	}
+	
+	img {
+		width: 100%;
+	}
+	
+	input {
+		border-radius: 2px;
+		background-color: #fff;
+		color: #333;
+		padding: 15px;
+		margin: 0px 0px 8px;
+		border: none;
+		width: 100%;
+		box-sizing: border-box;
+		font-size: 12pt;
+	}
+	
+	input[type="submit"] {
+		color: #fff;
+		background-color: #339AD5;
+	}
+	
+	::selection {
+		background: #8E471D;
+	}
+
+	#wrapper {
+	display: block;
+		position: relative;
+		
+		background: no-repeat url('../images/background.jpg') top center;
+		background-size: 100%;
+		max-width: 1200px;
+
+		margin: 48px auto;
+		
+		box-shadow: 0 0 8px rgba(0,0,0,0.3);
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		background-color: #1B1F30;
+		
+		border: 1px solid #444;
+	}
+	
+	.lightBlue { color: #339AD5; }
+
+	
+	
+	
+	
+	
+	header {
+		position: relative;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.48);
+	}
+
+	header #logo {
+		width: 168px;
+		height: 57px;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 12px;
+		left: 13px;
+	}
+	
+	
+	
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav li {
+		list-style: none;
+		display: inline-block;
+	}
+	
+	nav a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		padding: 7px 10px 8px 10px;
+		border-radius: 0px;
+		font-family: "Open Sans";
+		font-weight: 400;
+		font-size: 11pt;
+		letter-spacing: .0em;
+		border-radius: 3px;
+	}
+	
+	nav #navbar {
+		position: absolute;
+		top: 22px;
+		right: 28px;
+	}
+
+	nav #navbar a.active, nav #navbar a.active:hover {
+		background-color: #eee;
+		color: #111;
+	}
+	
+	nav #navbar a:hover {
+		background-color: #000;
+		color: #ddd;
+	}
+	
+	
+	
+	
+	
+	
+	
+	#instantvpn {
+		margin: 60px auto 0 auto;
+		padding: 0 20px;
+		top: 80px;
+		text-align: center;
+	}
+	
+	#instantvpn h1 {
+		font-family: 'Rockwell';
+		font-size: 48pt;
+		color: #71B8E2;
+		font-weight: normal;
+		line-height: 100%;
+		letter-spacing: .01em;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#instantvpn h2 {
+		font-family: 'Rockwell';
+		color: #FFFFFF;
+		font-size: 18pt;
+		font-weight: normal;
+		line-height: 130%;
+		letter-spacing: .02em;
+		line-height: 1.5em;
+		margin: 8px 0;
+		padding: 0;
+	}
+	
+	
+	
+	
+	
+	
+	#shortpitch {
+		margin: 50px auto 0 auto;
+		max-width: 1100px;
+		top: 130px;
+	}
+	
+	#shortpitch p {
+		margin: 0 50px;
+		font-family: "Rockwell";
+		color: #fff;
+		font-size: 16pt;
+		text-align: center;
+		letter-spacing: .02em;
+		line-height: 1.5em;
+	}
+	
+	#shortpitch strong {
+		font-weight: normal;
+		color: #CFF9FF;
+	}
+	
+	
+	
+	
+	
+	
+	#screenshot {
+		top: 200px;
+		max-width: 576px;
+		margin: 70px auto 80px auto;
+		padding: 0 40px;
+	}
+	
+
+	
+
+	
+	
+	section {
+		margin: 30px;
+		padding: 14px 30px;
+		position: relative;
+		font-family: "Open Sans";
+		font-weight: 300;
+		font-size: 12pt;
+		line-height: 1.5em;
+		letter-spacing: .01em;
+		color: #ddd;
+		clear: both;
+	}
+	
+	section .column {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+	
+	section.content {
+		background-color: rgba(204, 204, 204, 0.1);
+	}
+	
+	section h1 {
+		color: #339AD5;
+		line-height: 36px;
+	}
+	
+	section h3 {
+		color: #339AD5;
+		padding: 30px 0 0 0;
+	}
+	
+	section.content ul {
+		list-style: none;
+		margin: 40px 0;
+		padding: 0 0 0 25px;
+		font-weight: 400;
+	}
+	
+	section.content li:before {
+		content: '\27A8';
+		color: #339AD5;
+		margin: 0 8px 0 0;
+	}
+	
+	section.content li {
+		color: #fff;
+		line-height: 24px;
+		margin: 20px 0;
+	}
+	
+	
+
+	
+	#formkeep {
+		margin: 20px;
+		padding: 30px 36px;
+		max-width: 600px;
+		margin: 0 auto 120px auto;
+		background-color: rgba(204, 204, 204, 0.1);
+		text-align: center;
+	}
+	
+	#formkeep p {
+		margin: 0 0 26px 0;
+	}
+	
+	
+	
+	
+	
+	#topologies {
+		width:100%;
+		overflow:hidden;
+	}
+	
+	#topologies h1 {
+		font-family: 'Rockwell';
+		font-weight: normal;
+		font-size: 32pt;
+		margin: 0 0 60px 0;
+		line-height: 42px;
+		letter-spacing: .01em;
+	}
+	
+	#topologies-container {
+		float:left;
+		width:100%;
+		position:relative;
+		right:50%;
+	}
+	
+	#topologies-container h2 {
+		font-family: 'Rockwell';
+		font-weight: normal;
+		margin-top: 40px;
+	}
+
+	#hubandspoke {
+		float:left;
+		width:46%;
+		position:relative;
+		left:52%;
+		overflow:hidden;
+		text-align: center;
+	}
+	
+	#hubandspoke img {
+		width: 220px;
+	}
+	
+	#hubandspoke div {
+		text-align: left;
+	}
+	
+	#fullmesh {
+		float:left;
+		width:46%;
+		position:relative;
+		left:56%;
+		overflow:hidden;
+		text-align: center;
+	}
+	
+	#fullmesh img {
+		width: 240px;
+	}
+	
+	#fullmesh div {
+		text-align: left;
+	}
+	
+	
+	
+	
+	#readmore {
+		text-align: center;
+		padding: 80px 0;
+	}
+	
+	#readmore a {
+		color: #ccc;
+		text-decoration: none;
+	}
+	
+	
+	
+	
+	
+	#footer {
+		font-family: 'Rockwell';
+		font-weight: normal;
+	}
+	
+	#footer p {
+		font-size: 11pt;
+		line-height: 1.6em;
+		letter-spacing: 0.01em;
+		margin: 0;
+		color: #aaa;
+	}
+	
+	#footer strong {
+		font-weight: normal;
+		color: #fff;
+	}
+	
+	#footer img {
+		width: auto;
+	}
+	
+	#footer #footerlogo {
+		margin-bottom: 26px;
+	}
+	
+	#footer #linkedin {
+		position: relative;
+		padding-left: 24px;
+	}
+	
+	#footer #twitter {
+		position: relative;
+		padding-left: 24px;
+		margin-left: 16px;
+	}
+	
+	#footer #linkedin:before {
+		background: no-repeat url('../images/linkedin.png');
+		display: inline-block;
+		position: absolute;
+		content: '';
+		top: 0px;
+		left: 0px;
+		width: 15px;
+		height: 15px;
+	}
+	
+	#footer #twitter:before {
+		background: no-repeat url('../images/twitter.png');
+		display: inline-block;
+		position: absolute;
+		content: '';
+		top: 1px;
+		left: 0px;
+		width: 19px;
+		height: 16px;
+	}
+	
+	#footer #social {
+		margin: 29px 0 0 0;
+	}
+
+	#footer a { 
+		color: #fff;
+	}
+	
+	
+	/* different viewports */
+
+	@media (max-width: 1260px) {
+
+		#wrapper {
+			margin: 0 auto;
+			background-size: 100%;
+			background-size: 1200px auto;
+			border: none;
+		}
+				
+		#footer {
+			padding-bottom: 50px;
+		}
+	}
+	
+	@media (max-width: 700px) {
+
+		header {
+			height: 254px;
+			display: block;
+		}
+
+		header #logo {
+			top: 30px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+		
+		nav #navbar {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 100px;
+			padding: 23px;
+		}
+
+		nav li {
+			display: block;
+			margin: 0 0 4px 0;
+		}
+		
+		section {
+			margin: 20px;
+			padding: 16px;
+		}
+			
+		section .column {
+			width: auto;
+			display: block;
+			float: none;
+		}
+		
+		#topologies {
+			width: auto;
+			overflow: visible;
+		}
+		
+		#topologies-container {
+			float: none;
+			width: auto;
+			position: relative;
+			right: auto;
+		}
+		
+		#hubandspoke {
+			float: none;
+			width: auto;
+			position: relative;
+			left: auto;
+		}
+
+		#fullmesh {
+			float: none;
+			width: auto;
+			position: relative;
+			left: auto;
+			margin: 130px 0 70px 0;
+		}
+		
+		#fullmesh img {
+			margin: 0;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
