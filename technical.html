@@ -1,0 +1,82 @@
+---
+layout: master
+title: Technical — Instant VPN
+---
+
+		<section id="technical" class="content">
+	
+			<h1>Technical</h1>
+		
+			<h3>Public key exchange</h3>
+			
+			<p>We have developed a novel certificate-based method of mutual authentication using public key infrastructure concepts, and combined it with modern peer-to-peer networking to significantly reduce the friction of deploying secure communication channels between users and systems.</p>
+			
+			<p>Our exact method of key exchange is currently under NDA, if you would like you know more please <a href="/contact">contact us</a>.</p>
+			
+			<h3>Cryptography</h3>
+		
+			<p></p>
+		
+			<ul>
+			
+				<li>
+					Elliptic curve cryptography for key exchange and key signing
+					<p>We use ECDHE cryptography with Curve25519 to exchange keys, and Ed25519 to sign messages. We use the libsodium implementation of NaCl.</p>
+				</li>
+				
+				<li>
+					AES message encryption
+					<p>For symmetric encryption we use AEAD_AES_256_CBC_HMAC_SHA_512 mode with PKCS#7 padding.</p>
+				</li>
+				
+				<li>
+					We Encrypt-then-MAC
+					<p>Using HMACSHA512 on AES256 in AEAD mode.</p>
+				</li>
+				
+				<li>
+					We implement perfect forward secrecy
+					<p>Long term keys for authentication, short term ephemeral keys for each new session.</p>
+				</li>
+				
+				<li>
+					All comparisons are performed in constant-time
+					<p>Removes an entire class of side-channel attacks.</p>
+				</li>
+				
+				<li>
+					No support for data compression
+					<p>Compression can leak information about the plaintext through side-channel attacks.</p>
+				</li>
+				
+				<li>
+					Invalid packets are dropped, and do not elicit error messages as part of the protocol specification
+					<p>Reduces the risk of successful padding oracle attacks.</p>
+				</li>
+				
+				<li>
+					Session resuming is not permitted, nor part of the protocol
+					<p>Minimises the attack surface of the protocol to renegotiation attacks.</p>
+				</li>
+				
+				<li>
+					Key rotation is forced after every 2<sup>^32</sup> bytes of data exchanged between peers
+					<p>Well below the recommended key refresh boundary for AES256 (2<sup>^64</sup>).</p>
+				</li>
+				
+				<li>
+					A narrower public key infrastructure
+					<p>Instant VPN operates with a single CA at any given point in time. In traditional TLS any of 600+ vendors can issue a certificate against your public key. In our PKI model only one CA is active at any given point in time so there is less chance of a CA you've never heard of being compromised or  going rogue and undermining your security.</p>
+				</li>
+				
+			</ul>
+			
+		</section>
+
+
+
+
+
+
+
+
