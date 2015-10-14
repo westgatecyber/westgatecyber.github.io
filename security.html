@@ -26,21 +26,16 @@ title: Security — Instant VPN
 				
 				<li>
 					AES message encryption
-					<p>For symmetric encryption we use AEAD_AES_256_CBC_HMAC_SHA_512 mode with PKCS#7 padding.</p>
-				</li>
-				
-				<li>
-					We Encrypt-then-MAC
-					<p>Using HMACSHA512 on AES256 in AEAD mode.</p>
+					<p>For symmetric encryption we use AES_256_CBC_HMAC_SHA_512 mode with PKCS#7 padding and Encrypt-then-MAC with HMACSHA512.</p>
 				</li>
 				
 				<li>
 					We implement perfect forward secrecy
-					<p>Long term keys for authentication, short term ephemeral keys for each new session.</p>
+					<p>Long term keys for authentication, short term ephemeral keys computed using Curve25519 for each new session.</p>
 				</li>
 				
 				<li>
-					All comparisons are performed in constant-time
+					All cryptographic comparisons are performed in constant-time
 					<p>Removes an entire class of side-channel attacks.</p>
 				</li>
 				
