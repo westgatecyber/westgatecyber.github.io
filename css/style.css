@@ -34,7 +34,7 @@ canvas {
 }
 
 #particles-js {
-	display: fixed;
+	position: fixed;
 }
 
 .navbar-toggle {
