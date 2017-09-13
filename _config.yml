@@ -1,3 +1,6 @@
 name: westgatecyber
+
 gems:
  - jekyll-redirect-from
+ - jekyll-sitemap
+ 
