@@ -12,7 +12,7 @@ form, iframe {
 
 h2 {
 	font-family: 'Open Sans Condensed';	
-	font-size: 18pt;
+	font-size: 24pt;
 }
 
 h3 {
@@ -147,12 +147,16 @@ canvas {
 	letter-spacing: -0.01em;
 }
 
-.jumbotron .elasticSockets {
+.jumbotron .technology-link {
 	text-align: center;
 	font-family: 'Rockwell';
-	font-size: 34pt;
+	font-size: 26pt;
 	color: #419AD5;
 	letter-spacing: -0.01em;
+}
+
+.jumbotron .technology-link {
+
 }
 
 /******/
@@ -224,7 +228,7 @@ canvas {
 
 #maintext {
 	margin: 40px 0 0 0;
-	padding: 0 40px 0 0;
+    padding: 0 40px 0 0;
 }
 
 /******/
@@ -282,17 +286,18 @@ canvas {
     vertical-align: top;
 	padding: 15px;
 	border-top: 8px solid #419AD5;
-	margin: 10px 0 36px 0;
+    margin: 10px 0 36px 0;
+    text-align: center;
 }
 
-.developmentStateBox .img_sockets { text-align: center; height: 160px; }
-.developmentStateBox .img_sockets img { margin: 16px 0 0 0; width: 90px;}
+.developmentStateBox .img_sockets { text-align: center; height: 110px; }
+.developmentStateBox .img_sockets img { margin: 16px 0 0 0; width: 50px; }
 
-.developmentStateBox .img_sdk { text-align: center; height: 160px; }
-.developmentStateBox .img_sdk img { margin: 16px 0 0 0; width: 140px;}
+.developmentStateBox .img_sdk { text-align: center; height: 111px; }
+.developmentStateBox .img_sdk img { margin: 16px 0 0 0; width: 80px; }
 
-.developmentStateBox .img_vpn { text-align: center; height: 160px; }
-.developmentStateBox .img_vpn img { margin: 16px 0 0 0; width: 96px;}
+.developmentStateBox .img_vpn { text-align: center; height: 110px; }
+.developmentStateBox .img_vpn img { margin: 16px 0 0 0; width: 60px; }
 
 .developmentStateBox h3 {
 	font-family: 'Rockwell';
