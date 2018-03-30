@@ -4,3 +4,4 @@ plugins:
  - jekyll-redirect-from
  - jekyll-sitemap
  
+host: 			0.0.0.0
