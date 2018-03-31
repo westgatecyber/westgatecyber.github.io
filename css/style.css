@@ -1,7 +1,6 @@
 html, body {
-	background-color: #F5F5F5;
-	color: #444;
-	min-width: 325px;
+    background: radial-gradient(#1A3855, #0A1630) no-repeat fixed;
+    min-width: 325px;
 }
 
 form, iframe {
@@ -10,43 +9,62 @@ form, iframe {
 	border: none;
 }
 
+h1 {
+    font-size: 28pt;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
 h2 {
-	font-family: 'Open Sans Condensed';	
-	font-size: 24pt;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    padding: 0 0 5px 0;
+    border-bottom: solid 2px #71B8E2;
+    display: inline-block;
 }
 
 h3 {
-	font-family: 'Source Sans Pro';
-	font-size: 11pt;
-	font-weight: bold;
-	color: #444;
+    color: #fff;
 }
 
 p {
-	line-height: 25px;
-	font-size: 15px;
-	color: #555;
+	color: #fff;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-size: 15px;
+    font-family: "Roboto";
 	margin-bottom: 18px;
 }
 
-canvas {
-	display:block;
+a {
+    color: #419AD5;
 }
 
-#particles-js {
-    position: absolute;
+a:hover {
+    color: #419AD5;
+}
+
+img { 
+    max-width:100%;
+    -ms-interpolation-mode: bicubic;
+    border: none;
+}
+
+/******/
+/******/
+
+#mesh {
+    background-image: url("/img/mesh.png");
+    background-repeat: no-repeat;
+    width: 546px;
+    height: 757px;
+    position: fixed;
     top: 0;
-    width: 100%;
-    height: 370px;
-}
-
-.navbar-toggle {
-	border-radius: 2px;
-	border: 1px solid #ccc;
-}
-
-.row {
-	margin: 0;
+    right: 0;
 }
 
 /******/
@@ -54,19 +72,28 @@ canvas {
 
 .navbar {
 	border-top: 8px solid #419AD5;
-	height: auto;
-	margin: 0;
-	border-radius: 0;
+    border-radius: 0;
 }
 
 .navbar a {
-	transition: all 0.1s ease-in-out 0s;
 	color: #eee;
 }
 
 .navbar a:hover {
 	color: #419AD5;
 }
+
+.navbar-header {
+    height: 130px;
+}
+
+.navbar-nav {
+	font-size: 11px;
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 .navbar-nav li {
 	margin-right: 1px;
 }
@@ -95,68 +122,130 @@ canvas {
 
 .navbar-brand img {
 	position: relative;
-	width: 200px;
-	height: 65px;
-	margin-top: 30px;
+    height: 65px;
+    margin: 15px 0 0 0;
 }
 
-.navbar-nav {
-	font-size: 11px;
-	font-family: 'Roboto Condensed';
-	text-transform: uppercase;
-	letter-spacing: 1px;
+.navbar-toggle {
+	border-radius: 3px;
+    border: 1px solid #484F5A;
+    background: rgba(0,0,0,0.07);
 }
 
 /******/
 /******/
 
-#jumbotronHomeBackground {
-	background: radial-gradient(#1A3855, #0A1630);
+#home #strapline {
+    font-size: 34pt;
+    color: #fff;
+    font-family: Roboto;
+    padding-top: 56px;
+    padding-bottom: 20px;
+    font-weight: normal;
 }
 
-#jumbotronTechnologyBackground {
-	/*background: url('/img/lodyas.png');*/
-	background: radial-gradient(#1A3855, #0A1630);
+#home #summary {
+    color: #ccc;
+    max-width: 700px;
+    font-size: 14pt;
+    line-height: 30px;
+    font-family: Roboto;
+    padding-bottom: 60px;
 }
 
-#jumbotronServicesBackground {
-	background: radial-gradient(#1A3855, #0A1630);
+#home #productsContainer {
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
-.jumbotron {
-	position: relative;
-	margin: 0;
-	padding: 100px 0 90px 0;
-	background-color: transparent;
-	text-align: center;
-	color: #fff;
-	font-family: 'Source Sans Pro';
+#home #productsContainer .founded {
+    color: #aaa;
+    font-size: 9pt;
+    padding: 0;
 }
 
-.jumbotron p {
-	margin: 0 0 10px 0;
-	font-size: 12pt;
-	line-height: 30px;
-	letter-spacing: .03em;
-	color: #fff;
+#home #enclave {
+    padding: 23px 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    max-width: 394px;
 }
 
-.jumbotron h1 {
-	text-align: center;
-	font-size: 34pt;
-	letter-spacing: -0.01em;
+#home #enclave img {
+    border-radius: 6px;
 }
 
-.jumbotron .technology-link {
-	text-align: center;
-	font-family: 'Rockwell';
-	font-size: 26pt;
-	color: #419AD5;
-	letter-spacing: -0.01em;
+#home #enclave h2 {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 16pt;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    border: none;
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: none;
 }
 
-.jumbotron .technology-link {
+#home #enclave p {
+    color: #ccc;
+    font-family: "Roboto";
+    font-size: 11pt;
+    margin: 0;
+    padding: 0 0 16px 0;
+}
 
+#home #enclave p:last-child {
+    font-family: "Roboto";
+    padding: 0 0 0 0;
+}
+
+/******/
+/******/
+
+#technology {
+    padding-bottom: 140px;
+}
+
+#technology .patent-thumbnail {
+    border-radius: 3px;
+}
+
+/******/
+/******/
+
+#press {
+    padding-bottom: 140px;
+}
+
+#press .logo-container {
+    border-radius: 6px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+    display: inline-block;
+    height: 150px;
+    vertical-align: top;
+}
+
+#press .logo {
+    background: #fff;
+    border-radius: 6px;
+    padding: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+#press .logo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#press .document {
+    padding: 14px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /******/
@@ -226,55 +315,70 @@ canvas {
 /******/
 /******/
 
-#maintext {
-	margin: 40px 0 0 0;
-    padding: 0 40px 0 0;
+#company {
+    padding-bottom: 140px;
 }
 
-/******/
-/******/
-
-#leadership {
-	margin-top: 124px;
+#company h2 {
+    margin: 60px 0 30px 0;
 }
-	
-#leadership .box {
+
+#company p {
+    font-size: 12pt;
+    line-height: 28px;
+}
+
+#company .supported-by {
+	background-color: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin: 0 0 26px 0;
+    padding: 16px 15px;
+    display: block;
+}
+
+#company .box {
 	padding: 8px 18px 10px 16px;
-	background-color: #fafafa;
-	border-radius: 8px;
+	background-color: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin: 0 0 26px 0;
+    min-height: 236px;
 }
 
-#leadership .box h3 {
+#company .box h3 {
 	margin: 12px 0 14px 0;
-	letter-spacing: .08em;
 	padding-bottom: 12px;
-	border-bottom: 1px solid #eee;
+    font-family: "Roboto";
+    font-size: 16pt;
 }
 
-#leadership .box p {
-	line-height: 24px;
+#company .box p {
+    color: #ccc;
 }
 
-#leadership .photo {
+#company .box img {
+    float: left;
+    margin: 10px 20px 10px 4px;
+}
+
+#company .photo {
 	display: block;
 	margin: 20px auto;
-	width: 250px;
-	height: 250px;
+	width: 135px;
+	height: 135px;
 	border-radius: 200px;
-	border: 6px solid #fff;
-	box-shadow: 2px 2px 9px #eee;
 }
 
-#leadership .dj {
-	background: url('../img/dj.png') no-repeat;
+#company .contact {
+    min-width: 150px;
+    display: inline-block;
 }
 
-#leadership .dn {
-	background: url('../img/dn.png') no-repeat;
-}
-
-#leadership .marc {
-	background: url('../img/marc.png') no-repeat;
+#company .registered-office {
+    padding-top: 26px;
+    font-size: 10pt;
+    font-style: italic;
+    color: #ccc;
+    max-width: 700px;
 }
 
 /******/
@@ -325,34 +429,26 @@ footer {
 /******/
 /******/
 
-@media only screen and (max-width: 991px) {
-
-	#maintext {
-		padding: 0 15px 0 15px;
-	}
-	
-}
-
 @media only screen and (max-width: 767px) {
 
-	.navbar-header {
-		height: 100px;
-	}
-	
+    #mesh {
+        display: none;
+    }
+    
 	.navbar-toggle {
-		margin-top: 30px;
-		margin-right: 14px;
+		margin: 45px 25px 0 0;
 	}
 
-	.icon-bar {
-		background-color: #eee;
-	}
-	
-	.navbar-brand img {
-		margin-top: 0;
-		margin-left: 0;
-	}
-		
+    #navbar {
+        margin: auto;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    .navbar-nav li {
+        margin-right: 0;
+    }
+
 	.navbar-nav li a:hover {
 		border-radius: 0;
 	}
@@ -360,32 +456,9 @@ footer {
 	.navbar-nav li.active a {
 		border-radius: 0;
 	}
-		
-	/******/
-	/******/
 
-	.jumbotron {
-		padding: 58px 0 84px 0;
+	.icon-bar {
+		background-color: #eee;
 	}
 
-	/******/
-	/******/
-	
-	#maintext {
-		padding: 0 15px 0 15px;
-	}
-	
-	#contact .secondcolumn {
-		margin-top: 60px;
-	}
 }
-
-
-
-
-
-
-
-
-
-
