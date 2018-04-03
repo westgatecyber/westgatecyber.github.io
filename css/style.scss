@@ -1,0 +1,467 @@
+---
+---
+
+$font1: 'Roboto';
+$font2: 'Open Sans';
+$font3: 'Roboto Condensed';
+
+$white: #FFFFFF;
+$sky: #419AD5;
+$arctic: #71B8E2;
+
+
+
+
+
+
+
+
+html, body {
+    background: radial-gradient(#1A3855, #0A1630) no-repeat fixed;
+    min-width: 325px;
+}
+
+form, iframe {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+h1 {
+    font-size: 28pt;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+h2 {
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11pt;
+    font-family: $font2;
+    padding: 0 0 5px 0;
+    border-bottom: solid 2px #71B8E2;
+    display: inline-block;
+}
+
+h3 {
+    color: #fff;
+}
+
+p {
+	color: #fff;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-size: 15px;
+    font-family: $font1;
+	margin-bottom: 18px;
+}
+
+a {
+    color: #419AD5;
+}
+
+a:hover {
+    color: #71B8E2;
+}
+
+a:visited {
+    color: #71B8E2;
+}
+
+img { 
+    max-width:100%;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+/******/
+/******/
+
+#mesh {
+    background-image: url("/img/mesh.png");
+    background-repeat: no-repeat;
+    width: 546px;
+    height: 757px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/******/
+/******/
+
+.navbar {
+
+	border-top: 8px solid #419AD5;
+    border-radius: 0;
+
+    a {
+        color: #eee;
+    }
+    
+    a:hover {
+        color: #419AD5;
+    }
+}
+
+.navbar-header {
+    height: 130px;
+}
+
+.navbar-nav {
+
+    font-size: 11px;
+    font-family: $font3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    li {
+        margin-right: 1px;
+    }
+    
+    li a:hover {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: #fff;
+    }
+    
+    li.active a {
+        color: #000;
+        text-decoration: none;
+        background-color: #eee;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    li.active a:hover {
+        background-color: #fff;
+    }    
+}
+
+.navbar-brand {
+
+    position: relative;
+        
+    img {
+        position: relative;
+        height: 65px;
+        margin: 15px 0 0 0;
+    }
+}
+
+.navbar-toggle {
+    border-radius: 3px;
+    border: 1px solid #484F5A;
+    background: rgba(0,0,0,0.07);
+}
+
+/******/
+/******/
+
+#home {
+    
+    #strapline {
+        font-size: 34pt;
+        color: #fff;
+        font-family: $font1;
+        padding-top: 56px;
+        padding-bottom: 20px;
+        font-weight: normal;
+    }
+
+    #summary {
+        color: #ccc;
+        max-width: 700px;
+        font-size: 14pt;
+        line-height: 30px;
+        font-family: $font1;
+        padding-bottom: 60px;
+    }
+
+    #productsContainer {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    #productsContainer .founded {
+        color: #aaa;
+        font-size: 9pt;
+        padding: 0;
+    }
+
+    #enclave {
+        padding: 23px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        max-width: 394px;
+
+        img {
+            border-radius: 6px;
+        }
+    
+        h2 {
+            font-family: $font1;
+            color: #fff;
+            font-size: 16pt;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+            border: none;
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: none;
+        }
+    
+        p {
+            color: #ccc;
+            font-family: $font1;
+            font-size: 11pt;
+            margin: 0;
+            padding: 0 0 16px 0;
+        }
+    
+        p:last-child {
+            padding: 0 0 0 0;
+        }    
+    }
+}
+
+/******/
+/******/
+
+#technology {
+
+    padding-bottom: 140px;
+
+    .ip {
+        margin: 40px 0 32px 0;
+    }
+    
+    .patent {
+
+        display: inline-block;
+        padding: 24px 0 14px 6px;
+        margin: 0 14px 0 14px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-bottom: 16px;
+            
+        .patent .patentContainer {
+            text-align: center;
+        }
+        
+        .patent .patentThumbnail img {
+            border-radius: 3px;
+        }
+        
+        .patent .patentNumber {
+            padding: 12px 0 6px 0;
+        }
+    }
+}
+
+/******/
+/******/
+
+#press {
+
+    padding-bottom: 140px;
+
+    #library {
+        margin-bottom: 30px;
+    }
+    
+    #mediaResources {
+        margin: 60px 0 30px 0;
+    }
+    
+    .document {
+
+        border-radius: 6px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        vertical-align: top;
+        margin-bottom: 24px;
+        display: inline-block;
+        text-align: center;
+
+        p {
+            padding: 12px 0 0 0;
+            margin: 0;
+        }
+        
+        img {
+            border-radius: 4px;
+        }    
+    }
+    
+    .fileSize {
+        font-size: 12px;
+    }
+    
+    .logo-container {
+
+        border-radius: 6px;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        vertical-align: top;
+        margin-bottom: 24px;
+        display: inline-block;
+        text-align: center;
+        
+        p {
+            padding: 12px 0 0 0;
+            margin: 0;
+        }
+    }
+    
+    .logo {
+
+        background: #fff;
+        border-radius: 4px;
+        padding: 14px;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+
+        img {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+/******/
+/******/
+
+#company {
+
+    padding-bottom: 140px;
+
+    h2 {
+        margin: 60px 0 30px 0;
+    }
+    
+    .supported-by {
+
+        background-color: rgba(255, 255, 255, 0.1);;
+        border-radius: 8px;
+        margin: 0 0 26px 0;
+        height: 120px;
+        text-align: center;
+        position: relative;
+
+        img {
+            /*
+            max-width: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);*/
+        
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 16px 15px;
+        }
+    }
+    
+    .box {
+
+        padding: 8px 18px 10px 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        margin: 0 0 26px 0;
+        min-height: 236px;
+
+        h3 {
+            margin: 12px 0 14px 0;
+            padding-bottom: 12px;
+            font-family: $font1;
+            font-size: 16pt;
+        }
+
+        p {
+            color: #ccc;
+        }
+        
+        img {
+            float: left;
+            margin: 10px 20px 10px 4px;
+        }        
+    }
+    
+    .photo {
+        display: block;
+        margin: 20px auto;
+        width: 135px;
+        height: 135px;
+        border-radius: 200px;
+    }
+    
+    .contact {
+        min-width: 150px;
+        display: inline-block;
+    }
+    
+    .registered-office {
+        padding-top: 26px;
+        font-size: 10pt;
+        font-style: italic;
+        color: #ccc;
+        max-width: 700px;
+    }    
+}
+
+/******/
+/******/
+
+@media only screen and (max-width: 991px) {
+
+    #technology .patent .patentNumber {
+        margin-bottom: 36px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #mesh {
+        display: none;
+    }
+    
+	.navbar-toggle {
+		margin: 45px 25px 0 0;
+	}
+
+    #navbar {
+        margin: auto;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    .navbar-nav {
+
+        li {
+            margin-right: 0;
+            a:hover {
+                border-radius: 0;
+            }
+        
+            li.active a {
+                border-radius: 0;
+            }
+        }
+    }
+
+	.icon-bar {
+		background-color: #eee;
+	}
+}
