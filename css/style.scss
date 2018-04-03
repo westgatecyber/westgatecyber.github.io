@@ -6,10 +6,14 @@ $font2: 'Open Sans';
 $font3: 'Roboto Condensed';
 
 $white: #FFFFFF;
+$grey: #EEEEEE;
+$silver: #CCCCCC;
+$darkgrey: #AAAAAA;
 $sky: #419AD5;
 $arctic: #71B8E2;
+$black: #000000;
 
-
+$background-fade: rgba(255, 255, 255, 0.1);
 
 
 
@@ -29,28 +33,28 @@ form, iframe {
 
 h1 {
     font-size: 28pt;
-    color: #fff;
+    color: $white;
     font-family: Roboto;
     font-weight: normal;
 }
 
 h2 {
-    color: #eee;
+    color: $grey;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 11pt;
     font-family: $font2;
     padding: 0 0 5px 0;
-    border-bottom: solid 2px #71B8E2;
+    border-bottom: solid 2px $arctic;
     display: inline-block;
 }
 
 h3 {
-    color: #fff;
+    color: $white;
 }
 
 p {
-	color: #fff;
+	color: $white;
     line-height: 24px;
     letter-spacing: 0;
     font-size: 15px;
@@ -59,15 +63,15 @@ p {
 }
 
 a {
-    color: #419AD5;
+    color: $sky;
 }
 
 a:hover {
-    color: #71B8E2;
+    color: $arctic;
 }
 
 a:visited {
-    color: #71B8E2;
+    color: $arctic;
 }
 
 img { 
@@ -94,15 +98,15 @@ img {
 
 .navbar {
 
-	border-top: 8px solid #419AD5;
+	border-top: 8px solid $sky;
     border-radius: 0;
 
     a {
-        color: #eee;
+        color: $grey;
     }
     
     a:hover {
-        color: #419AD5;
+        color: $sky;
     }
 }
 
@@ -124,19 +128,19 @@ img {
     li a:hover {
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
-        background-color: #fff;
+        background-color: $white;
     }
     
     li.active a {
-        color: #000;
+        color: $black;
         text-decoration: none;
-        background-color: #eee;
+        background-color: $grey;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
     }
     
     li.active a:hover {
-        background-color: #fff;
+        background-color: $white;
     }    
 }
 
@@ -164,7 +168,7 @@ img {
     
     #strapline {
         font-size: 34pt;
-        color: #fff;
+        color: $white;
         font-family: $font1;
         padding-top: 56px;
         padding-bottom: 20px;
@@ -172,7 +176,7 @@ img {
     }
 
     #summary {
-        color: #ccc;
+        color: $silver;
         max-width: 700px;
         font-size: 14pt;
         line-height: 30px;
@@ -186,14 +190,14 @@ img {
     }
 
     #productsContainer .founded {
-        color: #aaa;
+        color: $darkgrey;
         font-size: 9pt;
         padding: 0;
     }
 
     #enclave {
         padding: 23px 20px;
-        background: rgba(255, 255, 255, 0.1);
+        background: $background-fade;
         border-radius: 6px;
         max-width: 394px;
 
@@ -203,7 +207,7 @@ img {
     
         h2 {
             font-family: $font1;
-            color: #fff;
+            color: $white;
             font-size: 16pt;
             letter-spacing: -0.01em;
             text-decoration: none;
@@ -214,7 +218,7 @@ img {
         }
     
         p {
-            color: #ccc;
+            color: $silver;
             font-family: $font1;
             font-size: 11pt;
             margin: 0;
@@ -244,7 +248,7 @@ img {
         padding: 24px 0 14px 6px;
         margin: 0 14px 0 14px;
         border-radius: 6px;
-        background: rgba(255, 255, 255, 0.1);
+        background: $background-fade;
         margin-bottom: 16px;
             
         .patent .patentContainer {
@@ -280,7 +284,7 @@ img {
 
         border-radius: 6px;
         padding: 14px;
-        background: rgba(255, 255, 255, 0.1);
+        background: $background-fade;
         vertical-align: top;
         margin-bottom: 24px;
         display: inline-block;
@@ -304,7 +308,7 @@ img {
 
         border-radius: 6px;
         padding: 14px;
-        background: rgba(255, 255, 255, 0.1);
+        background: $background-fade;
         vertical-align: top;
         margin-bottom: 24px;
         display: inline-block;
@@ -318,7 +322,7 @@ img {
     
     .logo {
 
-        background: #fff;
+        background: $white;
         border-radius: 4px;
         padding: 14px;
         width: 100%;
@@ -390,7 +394,7 @@ img {
         }
 
         p {
-            color: #ccc;
+            color: $silver;
         }
         
         img {
@@ -416,7 +420,7 @@ img {
         padding-top: 26px;
         font-size: 10pt;
         font-style: italic;
-        color: #ccc;
+        color: $silver;
         max-width: 700px;
     }    
 }
