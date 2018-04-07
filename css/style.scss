@@ -66,7 +66,8 @@ a {
     color: $sky;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: $arctic;
 }
 
@@ -510,10 +511,9 @@ img {
     .button {
 
         border: none;
-        background: rgba(255, 255, 255, 0.9);
-        color: $white;
+        background: transparent;
         cursor: pointer;
-        color: #222;
+        color: $darkgrey;
         display: block;
         font-family: sans-serif;
         font-size: 10pt;
@@ -532,7 +532,12 @@ img {
 
         &:hover {
             background-color: $arctic;
+            background: rgba(255, 255, 255, 0.9);
             color: #222;
+        }
+
+        &:focus {
+            color: $white;
         }
 
         &:active,
