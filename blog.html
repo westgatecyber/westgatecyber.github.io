@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog - Westgate Cyber Security
+title: Blog
 permalink: /blog
 ---
 
@@ -17,7 +17,7 @@ permalink: /blog
         <div class="col-md-2">
             <div class="button-group filters-button-group">
                 <button class="button is-checked" data-filter="*">All posts ({% include jeykll-post-counter.liquid %})</button>
-
+                <!-- announcements, data, engineering, policy, product-updates -->
                 {% assign tags = site.tags | sort %}
                 {% for tag in tags %}
                     <button class="button" data-filter=".{{ tag[0] }}">{{ tag[0] | capitalize | replace:'-', ' ' }} ({{ tag | last | size }})</button>
