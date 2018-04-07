@@ -1,0 +1,6 @@
+{% comment %}
+*
+*   Counter: This include counts your jekyll posts
+*   Thanks https://gist.github.com/Phlow/b31f3a8d292aa63081c6
+*
+{% endcomment %}{% assign counter = 0 %}{% for item in site.posts %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }}
