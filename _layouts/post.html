@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div id="blog" class="container">
+
+    <div class="row">
+        <div class="col-md-9 blog-post-column">
+
+            <div class="breadcrumb"><a href="/">Blog</a> <span class="divider">›</span> {{ page.title }}</div>
+
+            <h2>{{ page.title }}</h2>
+            <p class="meta">{{ page.date | date_to_string }} — {% for category in page.categories %} <span class="category">{{ category }}</span> {% endfor %}</p>
+
+            <!-- -->
+            <!-- -->
+            <!-- -->
+
+            <div class="post disqus">
+                {{ content }}
+            </div>
+
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+
+                // more options @ http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
+                var disqus_shortname = 'pingfu';		
+
+                (function() {
+                    var dsq = document.createElement('script'); 
+                    dsq.type = 'text/javascript'; 
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+
+            </script>
+
+            <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+        </div>
+
+        <div class="col-md-3 blog-meta-column">
+
+            
+        </div>
+    </div>
+</div>
