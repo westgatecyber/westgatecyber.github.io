@@ -645,9 +645,16 @@ img {
     }
 
     #body {
+
+        position: relative;
+
         p {
             font-size: 18px;
             line-height: 30px;
+        }
+
+        .center {
+            text-align: center;
         }
     }
 

@@ -17,6 +17,4 @@ Later this month, along with 21 other finalists we'll be flying out to Amsterdam
 > 
 > Startupbootcamp is a global network of industry-specific accelerator programs. This year’s accelerator launches on November 1st 2018, granting access to mentorship and investors as well as &euro;15,000 EUR in funding for living expenses and free office space for three months."
 
-
-
-[sbc-selection-days]: /assets/sbc-selection-days.png "Startupbootcamp Selection Days"
+[sbc-selection-days]: /assets/sbc-selection-days.png
