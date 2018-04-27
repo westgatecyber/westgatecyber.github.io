@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Westgate Cyber Security wins place on prestigious Dutch Accelerator"
-date: 2017-11-12
+date: 2017-10-12
 tags: "announcements"
 permalink: /blog/:title
 thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days-group.png
