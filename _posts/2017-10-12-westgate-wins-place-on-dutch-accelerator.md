@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Westgate Cyber Security wins place on prestigious Dutch Accelerator"
-date: 2017-11-01
+date: 2017-11-12
 tags: "announcements"
 permalink: /blog/:title
 thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days-group.png
@@ -9,7 +9,7 @@ thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days-group.png
 
 We’re extremely proud to announce that we’ve been offered a place on the Dutch [FinTech & CyberSecurity 2018](sbc) program run by Startupbootcamp! In fact we came top of a 500+ Global application and selection process.
 
-We'll be spending the next 3 months in the beautiful city of Amsterdam on an intense, three month program.
+Starting in November, we'll be spending the next 3 months in the beautiful city of Amsterdam on an intense, three month program.
 
 ![Startupbootcamp Selection Days][sbc-selection-days-1]
 

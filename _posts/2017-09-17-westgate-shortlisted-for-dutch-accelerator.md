@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Westgate Cyber Security shortlisted for Dutch FinTech &amp; CyberSecurity Accelerator"
-date: 2017-10-03
+date: 2017-09-17
 tags: "announcements"
 permalink: /blog/:title
 thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days.png
