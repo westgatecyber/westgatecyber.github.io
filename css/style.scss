@@ -192,6 +192,10 @@ img {
 
 #home {
     
+	h2 {
+		text-align:center;
+	}
+	
     #strapline {
         font-size: 34pt;
         color: $white;
@@ -226,6 +230,7 @@ img {
         background: $background-fade;
         border-radius: 6px;
         max-width: 394px;
+		margin: 0 auto;
 
         img {
             border-radius: 6px;
