@@ -1,27 +1,31 @@
 <header>
+
     <nav class="navbar navbar-top">
         <div class="container">
             <div class="navbar-header">
+				<!--
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+				-->
                 <a class="navbar-brand" href="/">
                     <img src="/img/logo-white.png" alt="Westgate Cyber Security">
                 </a>
             </div>
-            
+            <!--
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li {% if page.url == "/" %}      			        class="active" {% endif %} ><a href="/">Home</a></li>
-                    <!--<li {% if page.url contains "/technology" %}      	class="active" {% endif %} ><a href="/technology">Technology</a></li>-->
+                    <li {% if page.url contains "/technology" %}      	class="active" {% endif %} ><a href="/technology">Technology</a></li>
                     <li {% if page.url contains "/resources" %}      	class="active" {% endif %} ><a href="/resources">Resources</a></li>
-                    <!--<li {% if page.url contains "/company" %}      		class="active" {% endif %} ><a href="/company">Company</a></li>-->
-                    <!--<li {% if page.url contains "/blog" %}      		class="active" {% endif %} ><a href="/blog">Blog</a></li>-->
+                    <li {% if page.url contains "/company" %}      		class="active" {% endif %} ><a href="/company">Company</a></li>
+                    <li {% if page.url contains "/blog" %}      		class="active" {% endif %} ><a href="/blog">Blog</a></li>
                 </ul>
             </div>
+			-->
         </div>
     </nav>
 </header>
