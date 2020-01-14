@@ -201,12 +201,15 @@ img {
         font-weight: normal;
     }
 
-    #summary {
+    .summary {
         color: $silver;
         max-width: 700px;
         font-size: 14pt;
         line-height: 30px;
         font-family: $font1;
+    }
+
+    .summary:last-child {
         padding-bottom: 60px;
     }
 
