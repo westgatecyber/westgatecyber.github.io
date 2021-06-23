@@ -5,6 +5,7 @@ date: 2017-10-12
 tags: "announcements"
 permalink: /blog/:title
 thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days-group.png
+redirect_to: "https://enclave.io/"
 ---
 
 We’re extremely proud to announce that we’ve been offered a place on the Dutch [FinTech & CyberSecurity 2018](sbc) program run by Startupbootcamp! In fact we came top of a 500+ Global application and selection process.
