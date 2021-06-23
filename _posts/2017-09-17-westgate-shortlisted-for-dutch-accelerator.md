@@ -5,6 +5,7 @@ date: 2017-09-17
 tags: "announcements"
 permalink: /blog/:title
 thumbnail: /assets/thumbnails/thumbnail-sbc-selection-days.png
+redirect_to: "https://enclave.io/"
 ---
 
 ![Startupbootcamp Selection Days][sbc-selection-days]
